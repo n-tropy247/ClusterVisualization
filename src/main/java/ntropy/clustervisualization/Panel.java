@@ -65,10 +65,10 @@ public class Panel extends JPanel {
      * Configure JPanel.
      */
     private void init() {
-        requestFocus();
+        requestFocus(); /* like clicking on a window */
         setPreferredSize(new Dimension(winW, winH));
 
-        repaint();
+        repaint(); /* invoke paintComponent() */
     }
 
     /**
@@ -80,13 +80,19 @@ public class Panel extends JPanel {
     @Override
     public void paintComponent(final Graphics g) {
 
+        /* JPanel has to handle system stuff */
         super.paintComponent(g);
+        
+        /* cast the existing graphics to access 2D functionality */
         Graphics2D g2 = (Graphics2D) g;
 
+        /* set line thickness */
         g2.setStroke(new BasicStroke(4));
 
         /* base of triangle */
         g2.setColor(Color.red);
+        /* g2.drawLine(x1, y1, x2, y2) */
+        /* scale * axisLen === length triangle */
         g2.drawLine(xOff, yOff, xOff + (scale * axisLen), yOff);
 
         /* left side of triangle */
@@ -102,6 +108,8 @@ public class Panel extends JPanel {
 
         /* draw points */
         g2.setColor(Color.black);
+        
+        /* for each Vector2 in DataUtils.DATA_GRAPH */
         data.getData().forEach(v -> {
             if (DEBUG) {
                 System.out.printf("\nCoords: %d, %d",

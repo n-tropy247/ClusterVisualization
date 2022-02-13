@@ -33,7 +33,7 @@ public class DataUtils {
 
     private final boolean DEBUG;
 
-    /* data */
+    /* data containers */
     private final List<DataPoint> DATA_RAW;
     private final List<Vector2> DATA_GRAPH;
 
@@ -44,6 +44,8 @@ public class DataUtils {
      */
     public DataUtils(final boolean debug) {
         DEBUG = debug;
+        
+        /* initialize Lists to type ArrayList */
         DATA_RAW = new ArrayList<>();
         DATA_GRAPH = new ArrayList<>();
 
@@ -66,7 +68,9 @@ public class DataUtils {
             Color.yellow
         };
 
+        /* for each Color in the above arr */
         for (Color c : testColors) {
+            /* Java Color allows RGB data access */
             DATA_RAW.add(new DataPoint(c.getRed(), c.getGreen(), c.getBlue()));
         }
     }

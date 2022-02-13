@@ -33,7 +33,7 @@ final class Program extends JFrame {
 
     /**
      * Default constructor, invokes local settings initialization.
-     * 
+     *
      * @param debug true if debug mode specified
      */
     Program(final boolean debug) {
@@ -43,21 +43,34 @@ final class Program extends JFrame {
     /**
      * Adds {@link ntropy.clustervisualization.Panel Panel} and initializes
      * application view.
-     * 
+     *
      * @param debug true if debug mode specified
      */
     private void init(final boolean debug) {
-            getContentPane().add(new Panel(debug));
-            setResizable(false);
-            pack();
-            setTitle("Cluster Visualization: RGB");
-            setLocationByPlatform(true);
-            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        /* gets the content pane of the primary window and sets it to
+         * the custom panel.
+        */
+        getContentPane().add(new Panel(debug));
+        
+        /* do not allow user to resize window */
+        setResizable(false);
+        
+        /* scale graphics */
+        pack();
+        
+        /* set window title in top bar */
+        setTitle("Cluster Visualization: RGB");
+        
+        /* should open in center of screen */
+        setLocationByPlatform(true);
+        
+        /* the 'x' actually closes the app */
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    
+
     /**
      * Adds program container to EventQueue.
-     * 
+     *
      * @param args command-line arguments
      */
     public static void main(final String[] args) {

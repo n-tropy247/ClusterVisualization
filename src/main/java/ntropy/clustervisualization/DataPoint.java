@@ -28,9 +28,7 @@ package ntropy.clustervisualization;
 public class DataPoint {
 
     /* 3-tuple of data */
-    private final int x;
-    private final int y;
-    private final int z;
+    private final int x, y, z;
 
     /**
      * Default constructor. Initializes 3-tuple from given integers.
