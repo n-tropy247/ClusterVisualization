@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DATA_GRAPH	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    private final List<Vector2> DATA_GRAPH;$/;"	f	class:DataUtils	file:
+DATA_RAW	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    private final List<DataPoint> DATA_RAW;$/;"	f	class:DataUtils	file:
+DEBUG	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    private final boolean DEBUG;$/;"	f	class:DataUtils	file:
+DEBUG	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final boolean DEBUG;$/;"	f	class:Panel	file:
+DataPoint	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    public DataPoint(final int a, final int b, final int c) {$/;"	m	class:DataPoint
+DataPoint	src/main/java/ntropy/clustervisualization/DataPoint.java	/^public class DataPoint {$/;"	c
+DataUtils	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    public DataUtils(final boolean debug) {$/;"	m	class:DataUtils
+DataUtils	src/main/java/ntropy/clustervisualization/DataUtils.java	/^public class DataUtils {$/;"	c
+Panel	src/main/java/ntropy/clustervisualization/Panel.java	/^    Panel(final boolean debug) {$/;"	m	class:Panel
+Panel	src/main/java/ntropy/clustervisualization/Panel.java	/^public class Panel extends JPanel {$/;"	c
+Program	src/main/java/ntropy/clustervisualization/Program.java	/^    Program(final boolean debug) {$/;"	m	class:Program
+Program	src/main/java/ntropy/clustervisualization/Program.java	/^final class Program extends JFrame {$/;"	c
+Vector2	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public Vector2() {$/;"	m	class:Vector2
+Vector2	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public Vector2(final double a, final double b) {$/;"	m	class:Vector2
+Vector2	src/main/java/ntropy/clustervisualization/Vector2.java	/^public class Vector2 {$/;"	c
+axisLen	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int scale = 50, axisLen = 10;$/;"	f	class:Panel	file:
+convertData	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    private void convertData() {$/;"	m	class:DataUtils	file:
+createSampleData	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    private void createSampleData() {$/;"	m	class:DataUtils	file:
+data	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final DataUtils data;$/;"	f	class:Panel	file:
+getData	src/main/java/ntropy/clustervisualization/DataUtils.java	/^    public List<Vector2> getData() {$/;"	m	class:DataUtils
+getX	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    public int getX() {$/;"	m	class:DataPoint
+getX	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public double getX() {$/;"	m	class:Vector2
+getY	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    public int getY() {$/;"	m	class:DataPoint
+getY	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public double getY() {$/;"	m	class:Vector2
+getZ	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    public int getZ() {$/;"	m	class:DataPoint
+init	src/main/java/ntropy/clustervisualization/Panel.java	/^    private void init() {$/;"	m	class:Panel	file:
+init	src/main/java/ntropy/clustervisualization/Program.java	/^    private void init(final boolean debug) {$/;"	m	class:Program	file:
+main	src/main/java/ntropy/clustervisualization/Program.java	/^    public static void main(final String[] args) {$/;"	m	class:Program
+ntropy.clustervisualization	src/main/java/ntropy/clustervisualization/DataPoint.java	/^package ntropy.clustervisualization;$/;"	p
+ntropy.clustervisualization	src/main/java/ntropy/clustervisualization/DataUtils.java	/^package ntropy.clustervisualization;$/;"	p
+ntropy.clustervisualization	src/main/java/ntropy/clustervisualization/Panel.java	/^package ntropy.clustervisualization;$/;"	p
+ntropy.clustervisualization	src/main/java/ntropy/clustervisualization/Program.java	/^package ntropy.clustervisualization;$/;"	p
+ntropy.clustervisualization	src/main/java/ntropy/clustervisualization/Vector2.java	/^package ntropy.clustervisualization;$/;"	p
+paintComponent	src/main/java/ntropy/clustervisualization/Panel.java	/^    public void paintComponent(final Graphics g) {$/;"	m	class:Panel
+pointRad	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int pointRad = 10;$/;"	f	class:Panel	file:
+scale	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int scale = 50, axisLen = 10;$/;"	f	class:Panel	file:
+setX	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public void setX(final double x) {$/;"	m	class:Vector2
+setY	src/main/java/ntropy/clustervisualization/Vector2.java	/^    public void setY(final double y) {$/;"	m	class:Vector2
+tan60	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final double tan60 = Math.tan(Math.PI \/ 3.);$/;"	f	class:Panel	file:
+winH	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int winW = 1000, winH = 800;$/;"	f	class:Panel	file:
+winW	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int winW = 1000, winH = 800;$/;"	f	class:Panel	file:
+x	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    private final int x;$/;"	f	class:DataPoint	file:
+x	src/main/java/ntropy/clustervisualization/Vector2.java	/^    private double x = 0;$/;"	f	class:Vector2	file:
+xOff	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int xOff = 20, yOff = winH - 20;$/;"	f	class:Panel	file:
+y	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    private final int y;$/;"	f	class:DataPoint	file:
+y	src/main/java/ntropy/clustervisualization/Vector2.java	/^    private double y = 0;$/;"	f	class:Vector2	file:
+yOff	src/main/java/ntropy/clustervisualization/Panel.java	/^    private final int xOff = 20, yOff = winH - 20;$/;"	f	class:Panel	file:
+z	src/main/java/ntropy/clustervisualization/DataPoint.java	/^    private final int z;$/;"	f	class:DataPoint	file:
