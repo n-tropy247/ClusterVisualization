@@ -61,6 +61,7 @@ final class Program extends JFrame {
      * @param args command-line arguments
      */
     public static void main(final String[] args) {
+        /* command line arguments to list, check for debug mode */
         boolean debug = Arrays.asList(args).contains("debug");
         EventQueue.invokeLater(() -> {
             JFrame e = new Program(debug);
