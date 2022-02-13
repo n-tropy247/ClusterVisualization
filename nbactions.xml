@@ -15,7 +15,7 @@
                 <exec.appArgs>debug</exec.appArgs>
                 <exec.mainClass>ntropy.clustervisualization.Program</exec.mainClass>
                 <exec.executable>java</exec.executable>
-                <exec.workingdir>d</exec.workingdir>
+                <exec.workingdir></exec.workingdir>
             </properties>
         </action>
         <action>
@@ -34,7 +34,7 @@
                 <exec.mainClass>ntropy.clustervisualization.Program</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
-                <exec.workingdir>d</exec.workingdir>
+                <exec.workingdir></exec.workingdir>
             </properties>
         </action>
         <action>
@@ -52,7 +52,7 @@
                 <exec.mainClass>ntropy.clustervisualization.Program</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <exec.appArgs>debug</exec.appArgs>
-                <exec.workingdir>d</exec.workingdir>
+                <exec.workingdir></exec.workingdir>
             </properties>
         </action>
     </actions>
