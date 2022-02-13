@@ -74,7 +74,11 @@ final class Program extends JFrame {
      * @param args command-line arguments
      */
     public static void main(final String[] args) {
+        /* command line arguments to list, check for debug mode */
         boolean debug = Arrays.asList(args).contains("debug");
+        /* fancy lambda stuff, basically allows us to add this program to the 
+         * event queue without maintaining a real reference to it. Shorthand.
+        */
         EventQueue.invokeLater(() -> {
             JFrame e = new Program(debug);
             e.setVisible(true);
