@@ -1,5 +1,5 @@
-ntropy/clustervisualization/Program.class
-ntropy/clustervisualization/DataPoint.class
-ntropy/clustervisualization/Panel.class
-ntropy/clustervisualization/Vector2.class
-ntropy/clustervisualization/DataUtils.class
+ntropy\clustervisualization\DataUtils.class
+ntropy\clustervisualization\Panel.class
+ntropy\clustervisualization\DataPoint.class
+ntropy\clustervisualization\Program.class
+ntropy\clustervisualization\Vector2.class

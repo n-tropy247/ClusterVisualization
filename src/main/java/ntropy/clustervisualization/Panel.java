@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2022 Riley Castelli
+ * Copyright (C) 2022 Timothy Dovci
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,6 +28,7 @@ import javax.swing.JPanel;
  * Graphics panel for visual representation of data.
  *
  * @author Riley Castelli
+ * @author Timothy Dovci
  * @version 2.13.2022
  * @since 2.13.2022
  */

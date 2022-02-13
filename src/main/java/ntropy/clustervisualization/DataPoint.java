@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2022 Riley Castelli
- *
+ * Copyright (C) 2022 Timothy Dovci
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -18,7 +19,9 @@ package ntropy.clustervisualization;
 
 /**
  * A single 3-tuple data point.
+ *
  * @author Riley Castelli
+ * @author Timothy Dovci
  * @version 2.13.2022
  * @since 2.11.2022
  */
@@ -31,6 +34,7 @@ public class DataPoint {
 
     /**
      * Default constructor. Initializes 3-tuple from given integers.
+     *
      * @param a first element of tuple
      * @param b second element of tuple
      * @param c third element of tuple
@@ -43,6 +47,7 @@ public class DataPoint {
 
     /**
      * Getter for first element of tuple.
+     *
      * @return first element
      */
     public int getX() {
@@ -51,6 +56,7 @@ public class DataPoint {
 
     /**
      * Getter for second element of tuple.
+     *
      * @return second element
      */
     public int getY() {
@@ -59,6 +65,7 @@ public class DataPoint {
 
     /**
      * Getter for third element of tuple.
+     *
      * @return third element
      */
     public int getZ() {
