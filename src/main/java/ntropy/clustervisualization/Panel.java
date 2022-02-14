@@ -51,7 +51,7 @@ public class Panel extends JPanel {
     /**
      * Default constructor. Invokes super then invokes local settings
      * initialization.
-     * 
+     *
      * @param debug true if debug mode specified
      */
     Panel(final boolean debug) {
@@ -65,10 +65,12 @@ public class Panel extends JPanel {
      * Configure JPanel.
      */
     private void init() {
-        requestFocus(); /* like clicking on a window */
+        requestFocus();
+        /* like clicking on a window */
         setPreferredSize(new Dimension(winW, winH));
 
-        repaint(); /* invoke paintComponent() */
+        repaint();
+        /* invoke paintComponent() */
     }
 
     /**
@@ -82,7 +84,7 @@ public class Panel extends JPanel {
 
         /* JPanel has to handle system stuff */
         super.paintComponent(g);
-        
+
         /* cast the existing graphics to access 2D functionality */
         Graphics2D g2 = (Graphics2D) g;
 
@@ -92,23 +94,23 @@ public class Panel extends JPanel {
         /* base of triangle */
         g2.setColor(Color.red);
         /* g2.drawLine(x1, y1, x2, y2) */
-        /* scale * axisLen === length triangle */
+ /* scale * axisLen === length triangle */
         g2.drawLine(xOff, yOff, xOff + (scale * axisLen), yOff);
 
         /* left side of triangle */
         g2.setColor(Color.green);
-        g2.drawLine(xOff, yOff, (xOff + (scale * axisLen)) / 2,
-                (int) (((xOff + (scale * axisLen)) / 2) * tan60));
+        g2.drawLine(xOff, yOff, xOff + ((scale * axisLen) / 2),
+                (int) ((xOff + ((scale * axisLen) / 2)) * tan60));
 
         /* right side of triangle */
         g2.setColor(Color.blue);
-        g2.drawLine((xOff + (scale * axisLen)) / 2,
-                (int) (((xOff + (scale * axisLen)) / 2) * tan60),
+        g2.drawLine(xOff + ((scale * axisLen) / 2),
+                (int) ((xOff + ((scale * axisLen) / 2)) * tan60),
                 xOff + (scale * axisLen), yOff);
 
         /* draw points */
         g2.setColor(Color.black);
-        
+
         /* for each Vector2 in DataUtils.DATA_GRAPH */
         data.getData().forEach(v -> {
             if (DEBUG) {
@@ -117,9 +119,11 @@ public class Panel extends JPanel {
                         yOff - ((int) (v.getY() * (scale * axisLen))));
             }
             //TODO data misaligned
-            g2.drawOval(xOff + ((int) (v.getX() * (scale * axisLen))),
-                    yOff - ((int) (v.getY() * (scale * axisLen))), pointRad,
-                    pointRad);
+            g2.drawOval(
+                    xOff + ((int) (v.getX() * (scale * axisLen)))
+                            - (pointRad / 2),
+                    yOff - ((int) (v.getY() * (scale * axisLen)))
+                            - (pointRad / 2), pointRad, pointRad);
         });
     }
 }

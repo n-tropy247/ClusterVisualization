@@ -82,10 +82,14 @@ public class DataUtils {
         final double tan60 = Math.tan(Math.PI / 3.);
 
         DATA_RAW.forEach(d -> {
-            int rgb = d.getX() + d.getY() + d.getZ();
+            double rgb = d.getX() + d.getY() + d.getZ();
             double x = (d.getZ() + (d.getX() * tan60)) / (rgb * tan60);
             double y = d.getZ() / (rgb * tan60);
+            //TODO values off for green, maybe work off 3 line intersect?
             DATA_GRAPH.add(new Vector2(x, y));
+            if (DEBUG) {
+                System.out.printf("\nScalars: %.4f, %.4f", x, y);
+            }
         });
     }
 

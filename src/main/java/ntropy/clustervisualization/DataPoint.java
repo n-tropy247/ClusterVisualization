@@ -28,7 +28,7 @@ package ntropy.clustervisualization;
 public class DataPoint {
 
     /* 3-tuple of data */
-    private final int x, y, z;
+    private final double x, y, z;
 
     /**
      * Default constructor. Initializes 3-tuple from given integers.
@@ -48,7 +48,7 @@ public class DataPoint {
      *
      * @return first element
      */
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -57,7 +57,7 @@ public class DataPoint {
      *
      * @return second element
      */
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -66,7 +66,7 @@ public class DataPoint {
      *
      * @return third element
      */
-    public int getZ() {
+    public double getZ() {
         return z;
     }
 }
