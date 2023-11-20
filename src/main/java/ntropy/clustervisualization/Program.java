@@ -26,7 +26,7 @@ import javax.swing.JFrame;
  *
  * @author Riley Castelli
  * @author Timothy Dovci
- * @version 2.13.2022
+ * @version 11.19.2023
  * @since 2.13.2022
  */
 final class Program extends JFrame {

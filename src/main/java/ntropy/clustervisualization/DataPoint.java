@@ -22,7 +22,7 @@ package ntropy.clustervisualization;
  *
  * @author Riley Castelli
  * @author Timothy Dovci
- * @version 2.13.2022
+ * @version 11.19.2023
  * @since 2.11.2022
  */
 public class DataPoint {

@@ -29,7 +29,7 @@ import javax.swing.JPanel;
  *
  * @author Riley Castelli
  * @author Timothy Dovci
- * @version 2.13.2022
+ * @version 11.19.2023
  * @since 2.13.2022
  */
 public class Panel extends JPanel {
@@ -39,8 +39,7 @@ public class Panel extends JPanel {
     /* points to plot */
     private final DataUtils data;
 
-    /* window constraints */
-    private final int winW = 1000, winH = 800;
+    private final int winH = 800;
 
     /* graphing constraints */
     private final double tan60 = Math.tan(Math.PI / 3.);
@@ -66,6 +65,8 @@ public class Panel extends JPanel {
      */
     private void init() {
         requestFocus();
+        /* window constraints */
+        int winW = 1000;
         setPreferredSize(new Dimension(winW, winH));
 
         repaint();
@@ -81,27 +82,7 @@ public class Panel extends JPanel {
     public void paintComponent(final Graphics g) {
 
         super.paintComponent(g);
-        Graphics2D g2 = (Graphics2D) g;
-
-        g2.setStroke(new BasicStroke(4));
-
-        /* base of triangle */
-        g2.setColor(Color.red);
-        g2.drawLine(xOff, yOff, xOff + (scale * axisLen), yOff);
-
-        /* left side of triangle */
-        g2.setColor(Color.green);
-        g2.drawLine(xOff, yOff, (xOff + (scale * axisLen)) / 2,
-                (int) (((xOff + (scale * axisLen)) / 2) * tan60));
-
-        /* right side of triangle */
-        g2.setColor(Color.blue);
-        g2.drawLine((xOff + (scale * axisLen)) / 2,
-                (int) (((xOff + (scale * axisLen)) / 2) * tan60),
-                xOff + (scale * axisLen), yOff);
-
-        /* draw points */
-        g2.setColor(Color.black);
+        Graphics2D g2 = getGraphics2D((Graphics2D) g);
         data.getData().forEach(v -> {
             if (DEBUG) {
                 System.out.printf("\nCoords: %d, %d",
@@ -113,5 +94,30 @@ public class Panel extends JPanel {
                     yOff - ((int) (v.getY() * (scale * axisLen))), pointRad,
                     pointRad);
         });
+    }
+
+    private Graphics2D getGraphics2D(Graphics2D g) {
+
+        g.setStroke(new BasicStroke(4));
+
+        /* base of triangle */
+        g.setColor(Color.red);
+        g.drawLine(xOff, yOff, xOff + (scale * axisLen), yOff);
+
+        /* left side of triangle */
+        g.setColor(Color.green);
+        double side = ((double) (xOff + (scale * axisLen)) / 2) * tan60;
+        g.drawLine(xOff, yOff, (xOff + (scale * axisLen)) / 2,
+                (int) side);
+
+        /* right side of triangle */
+        g.setColor(Color.blue);
+        g.drawLine((xOff + (scale * axisLen)) / 2,
+                (int) side,
+                xOff + (scale * axisLen), yOff);
+
+        /* draw points */
+        g.setColor(Color.black);
+        return g;
     }
 }

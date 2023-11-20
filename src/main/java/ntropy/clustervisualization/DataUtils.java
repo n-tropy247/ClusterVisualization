@@ -31,8 +31,6 @@ import java.util.List;
  */
 public class DataUtils {
 
-    private final boolean DEBUG;
-
     /* data */
     private final List<DataPoint> DATA_RAW;
     private final List<Vector2> DATA_GRAPH;
@@ -43,11 +41,10 @@ public class DataUtils {
      * @param debug true if debug mode specified
      */
     public DataUtils(final boolean debug) {
-        DEBUG = debug;
         DATA_RAW = new ArrayList<>();
         DATA_GRAPH = new ArrayList<>();
 
-        if (DEBUG) {
+        if (debug) {
             createSampleData();
         }
         convertData();
@@ -57,7 +54,7 @@ public class DataUtils {
      * Create sample data of RGB values.
      */
     private void createSampleData() {
-        Color testColors[] = {
+        Color[] testColors = {
             Color.red,
             Color.blue,
             Color.green,
